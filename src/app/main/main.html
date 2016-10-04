@@ -1,0 +1,142 @@
+<section class="home">
+  <div class="banner">
+    <hbnavbar></hbnavbar>
+    <div class="contents">
+      <div class="container">
+        <h1>GAME DEVELOPMENT</h1>
+        <h1>SMARTPHONE DEVELOPMENT</h1>
+        <h1>WEBSITE.</h1>
+        <p>We provide all for you</p>
+        <a href="/services" class="learn_more">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="introduction">
+  <div class="content">
+    <div class="container" >
+      <div class="mission">
+        <h3>Who are you seeing</h3>
+        <div class="divider"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique ut erat eget pharetra. 
+          Mauris suscipit ligula ac sapien volutpat efficitur. Curabitur lacinia in urna eget tristique. 
+Suspendisse in lacinia nunc, non tristique nulla.
+        </p>
+      </div>
+      <div class="client">
+        <span class="title">We worked with great Clients</span>
+        <slick dots=false infinite=true speed=300 slides-to-show=4 touch-move=false slides-to-scroll=1 
+        class="client_slick">
+          <div class="item" ng-repeat="item in main.customers">
+            <a href="{{ item.url }}" target="_blank">
+              <img ng-src="{{ item.img1 }}">
+              <img ng-src="{{ item.img2 }}">
+            </a>
+          </div>
+        </slick>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services text-center">
+  <div class="header">
+    <img src="assets/images/services.png">
+    <div class="title">
+      <div class="container">
+        <h3>What we love to do</h3>
+        <div class="divider"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container"  >
+      <div class="row">
+        <div class="col-sm-4 col-md-4" ng-repeat="item in main.services">
+          <div class="item {{ item.css}}">
+            <div class="header">
+              <img ng-src="{{ item.icon }}">
+            </div>
+            <div class="body">
+              <h3>{{ item.title }}</h3>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="checkmore">
+          <a href="/services">
+            Check more
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="products"> 
+    <div class="header" >
+      <h3>Our newest products</h3>
+      <div class="divider"></div>
+    </div>
+    <div class="container-fluid">
+      <div class="col-sm-4 col-md-4 col-lg-4 item" ng-repeat="item in main.products">
+        <img ng-src="{{ item.background }}">
+          <div class="content">
+              <div class="app_link">
+                <div class="device" ng-repeat="(device, url) in item.store">
+                  <a href="{{ url }}" target="_blank" class="btn"><fa name="{{ device }}"></fa></a>
+                </div>
+              </div>
+              <div class="info">
+                <div class="app_name">
+                  <img class="logo" ng-src="{{ item.logo }}">
+                  <span class="title">{{ item.title }}</span>
+                </div>
+                <p class="description">{{ item.description }}</p>
+              </div>
+          </div>
+      </div>
+    </div>
+</section>  
+<section class="customers">
+  <img src="/assets/images/customer.png">
+  <div class="comments">
+    <slick dots=false infinite=true speed=300 slides-to-show=1 touch-move=false slides-to-scroll=1 
+    class="container list" next-arrow=".btn-slick-next" prev-arrow=".btn-slick-prev">
+      <div class="item" ng-repeat="comment in main.comments">
+        <blockquote>
+          <p class="content">{{ comment.content }}</p>
+        </blockquote>
+        <div class="user_info">
+          <span class="name">{{ comment.user.name }}</span>
+          <span class="slash">/</span>
+          <span class="business">{{ comment.user.bussiness }}</span>
+          <span class="slash">/</span>
+          <span class="company">{{ comment.user.company }}</span>
+        </div>
+      </div>
+    </slick>
+    <div class="container control">
+      <a href="javascript:void(0)" class="btn arrow btn-slick-prev">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+      </a>
+      <a href="javascript:void(0)" class="btn arrow btn-slick-next">
+        <i class="glyphicon glyphicon-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="contact">
+  <div class="container">
+    <div class="header">
+      <h3>Like what you see? Let's talk.</h3>
+      <a href="/contact">Contact us</a>
+      <div class="divider"></div>
+    </div>
+    <company-info></company-info>
+  </div>
+</section>
+<hb-footer></hb-footer>

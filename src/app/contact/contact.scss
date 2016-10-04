@@ -1,0 +1,74 @@
+section.contact_page{
+  height: 75px !important;
+  .banner{
+    padding-bottom: 0 !important;
+  }
+}
+section.contact_sub{
+  .contact_form{
+    background-color: white;
+    .container{
+      top: 100px;
+      h1 {
+      font-weight: bold;
+      font-family: "Open Sans";
+      font-size: 48px;
+      padding-top: 30px;
+      }
+      h4 {
+        padding-bottom: 40px;
+        font-family: "Yu Gothic Light";
+        font-size: 24px;
+      }
+      form{
+        .row{
+          width: 80%;
+          margin: auto;
+          .form-group {
+            .form-control{
+              border: 1px solid #d2d2d2;
+              border-bottom: 0;
+            }
+            .form-control:focus{
+            border-color:#d2d2d2;
+            }
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+              margin: 0; 
+            }
+            textarea{
+              height: 300px;
+            }
+          }
+          .form-group.is-focused .form-control{
+            background-image: linear-gradient(#4B8CEF, #4B8CEF), linear-gradient(#D2D2D2, #D2D2D2);
+            box-shadow: 2px 2px 2px  #888888
+          }
+          .col-md-6,
+          .col-sm-6,
+          .col-md-12,
+          .col-sm-12{
+            margin: 0;
+          }
+        }
+        button{
+          background-color: white;
+          font-family: "Yu Gothic Bold";
+          border: none;
+          font-size: 22px;
+          font-weight: bold;
+          border-bottom: 3px solid;
+          padding-top: 30px;
+          margin-bottom: 70px;
+        }
+      }
+    }
+  }
+  .container{
+    top: 0 !important;
+    padding-bottom: 100px;
+  }
+}

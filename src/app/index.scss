@@ -1,0 +1,819 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+// @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+// @import url(http://fonts.googleapis.com/css?family=Open+Sans:Normal,Bold);
+
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+@import "../../bower_components/font-awesome/scss/font-awesome";
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+div[ng-view] {
+	width: 100%;
+	height: 100%;
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
+
+
+a:focus, a:hover {
+    color: #009688;
+}
+@font-face{
+  font-family:"Yu Gothic Bold";
+  src:url(../assets/fonts/yugothib.ttf);
+}
+@font-face{
+  font-family:"Yu Gothic Light";
+  src:url(../assets/fonts/yugothil.ttf);
+}
+@font-face{
+  font-family:"Yu Gothic Regular";
+  src:url(../assets/fonts/yugothic.ttf);
+}
+
+/* Space out content a bit */
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-top: 0;
+  background-color: #dadbdc;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Slick */
+.slick-next:before,
+.slick-prev:before {
+  color: #595959;
+  font-size: 18px;
+  font-family: FontAwesome;
+}
+.slick-prev:before {
+  content: "\f053";
+}
+.slick-next:before {
+  content: "\f054";
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Button Menu */
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+/* Custom page header */
+.header {
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+.divider {
+  background-image: url("../assets/images/divider.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 12px;
+  margin: auto;
+}
+/* Custom page footer */
+footer {
+  min-height: 100px;
+  background-color: #252525;
+  color: #ffffff;
+  .container {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    .btn-top {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      background-color: #959595;
+      color: #000000;
+      cursor: pointer;
+      i {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 2px;
+        font-weight: bold;
+      }
+    }
+    .content {
+      padding-top: 15px;
+      font-family: "Yu Gothic Regular";
+      font-size: 14px;
+    }
+  }
+}
+section {
+  .container {
+
+  }
+}
+/* Section home */
+section.home {
+  background-image: url(../assets/images/introduction.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .banner {
+    margin:auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(9, 89, 178, 0.6);
+    z-index: 1;
+    padding-bottom: 200px;
+    .contents {
+      display: table;
+      margin: auto;
+      height: 100%;
+      color: #ffffff;
+      position: relative;
+      .container {
+        display: table-cell;
+        vertical-align: middle;
+        h1 {
+          font-family: 'Open Sans';
+          font-size: 48px;
+          line-height: 42px;
+          font-weight: bold;
+        }
+        p {
+          padding: 40px 0;
+          font-family: "Yu Gothic Light";
+          font-size: 24px;
+          &.sub {
+            padding: 20px 0;
+            font-family: "Yu Gothic Bold";
+          }
+        }
+        a.learn_more {
+          font-family: "Yu Gothic Bold";
+          color: #ffffff;
+          font-size: 24px;
+          padding-bottom: 6px;
+          border-bottom: 3px solid #ffffff;
+          cursor: pointer;
+          font-weight: bold;
+        }
+        a.learn_more:focus,
+        a.learn_more:hover {
+          text-decoration: none;;
+        }
+      }
+    }
+  }
+}
+/* Section introduction*/
+section.introduction {
+  .header {
+    background-image: url(../assets/images/introduction.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .banner {
+      // position: absolute;
+      // top: 0;
+      margin:auto;
+      padding: 0;
+      width: 100%;
+      // background-color: rgba(31, 110, 199, 0.6);
+      z-index: 1;
+      .navbar_contact{
+        background-image: url(../assets/images/introduction.png);
+        background-size: cover;
+      }
+      .contents {
+        margin: auto;
+        display: table;
+        color: #ffffff;
+        padding-top: 12%;
+        .container {
+          display: table-cell;
+          vertical-align: middle;
+          h1 {
+            font-size: 54px;
+            line-height: 36px;
+          }
+          p {
+            line-height: 48px;
+            font-size: 24px;
+            font-family: "Yu Gothic Light";
+          }
+          a.learn_more {
+            font-family: "Yu Gothic Bold";
+            color: #ffffff;
+            font-size: 24px;
+            border-bottom: 3px solid #ffffff;
+            cursor: pointer;
+          }
+          a.learn_more:hover {
+            text-decoration: none;;
+          }
+        }
+      }
+      .customers_sub1{
+        .container{
+          h1{
+            color: white;
+            font-weight: 700;
+          }
+          h4{
+            color: white;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+  .content {
+    background-color: #ffffff;
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    padding-bottom: 60px;
+    .mission {
+      display: block;
+      margin-top: -140px;
+      background-color: #ffffff;
+      padding: 50px 30px 30px;
+      text-align: center;
+      h3 {
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 32px;
+        padding-bottom: 20px;
+      }
+      p {
+        font-family: "Yu Gothic Regular";
+        padding:40px 0 10px;
+        margin: auto;
+        font-size: 18px;
+      }
+    }
+    .client {
+      span.title {
+        line-height: 60px;
+        font-family: "Yu Gothic Regular";
+        font-size: 18px;
+      }
+      h3 {
+
+      }
+      .btn-slick {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+      }
+      .btn-slick-next {
+        right: -25px;
+      }
+      .btn-slick-prev {
+        left: -25px;
+      }
+      .client_slick {
+        margin-bottom: 10px;
+        .item {
+          padding:4px 20px;
+          a {
+            display:block;
+            position: relative;
+            img{
+              display: block;
+              margin: auto;
+              max-width: 100%;
+              max-height: 100%;
+              transition: all 0.5s ease-in-out;
+            }
+            img:first-child {
+              position: relative;
+              z-index: 50;
+              opacity: 1;
+            }
+            img:last-child {
+              position: absolute;
+              opacity: 0;
+              z-index: 100;
+              top: 0;
+            }
+            &:hover {
+              img:first-child {
+                opacity: 0;
+              }
+              img:last-child {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+/* Section services */
+section.services {
+  background-color: white;
+  position: relative;
+  .header {
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+    .title {
+      position: absolute;
+      top:0;
+      width: 100%;
+      color: white;
+      z-index: 10;
+      padding-top: 5%;
+      .container {
+        h3 {
+          padding-bottom: 10px;
+          font-family: "Open Sans";
+          font-weight: bold;
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  .content {
+    .row {
+      padding: 0;
+    }
+    .item {
+      background-color: white;
+      box-sizing: border-box;
+      .header {
+        width: 100%;
+        padding: 20% 30% 20%;
+        img {
+          display: block;
+          max-width: 100%;
+          margin: auto;
+          transition: all 1s ease-in-out;
+        }
+      }
+      .body {
+        padding: 3px;
+        h3 {
+          font-family: "Open Sans";
+          margin-top: 0;
+          color: #252525;
+          margin-bottom: 20px;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        p{
+          font-size: 14px;
+          padding: 0 25px;
+          height: 120px;
+          color: #464646;
+          font-family: "Open Sans";
+        }
+      }
+      &:hover {
+        .header {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    .app {
+      border-bottom:3px solid #31c7be;
+      &:hover {
+        box-shadow: 0 1px 3px 0 rgba(49,199,190,0.6);
+      }
+    }
+    .game {
+      border-bottom:3px solid #3c92ea;
+      &:hover {
+        box-shadow: 0 1px 3px 0 rgba(60,146,234,0.6);
+      }
+    }
+    .web {
+      border-bottom: 3px solid #dcb324;
+      &:hover {
+        box-shadow: 0 1px 3px 0 rgba(220,179,36,0.6);
+      }
+    }
+
+    .checkmore {
+      padding: 50px 20px 80px;
+      a {
+        font-size: 22px;
+        color: #252525;
+        border-bottom: 2px solid #252525;
+        font-family: "Yu Gothic Bold";
+        text-decoration: none;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+/* Section customers*/ 
+section.customers{
+  position: relative;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .comments {
+    position: absolute;
+    padding-top: 100px;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    .list {
+      .item {
+        color: #ffffff;
+        height: 200px;
+        padding: 0 120px 0 4px;
+        blockquote {
+          border-left: 0;
+          margin: 5px 0;
+          padding: 10px 0;
+          quotes: "\201C""\201D""\2018""\2019";
+        }
+        blockquote:before {
+          color: #ccc;
+          content: open-quote;
+          font-size: 48px;
+          line-height: 0.1em;
+          margin-right: 4px;
+          vertical-align: -15px;
+          font-weight: 200;
+        }
+        blockquote:after {
+          color: #ccc;
+          content: close-quote;
+          font-size: 48px;
+          line-height: 0.1em;
+          margin-left: 8px;
+          vertical-align: -15px;
+          font-weight: 200;
+        }
+        blockquote p.content {
+          display: inline;
+          font-size: 18px;
+          line-height: 28px;
+          font-family: "Yu Gothic Regular";
+          font-weight: 100;
+        }
+
+        .user_info {
+          line-height: 36px;
+          font-size: 14px;
+          font-weight: 100; 
+          span {
+            display: inline-block;
+          }
+          .slash {
+            padding: 0 4px;
+            font-size: 16px;
+          }
+          .name {
+            font-size: 24px;
+            font-weight: 200;
+          }
+          .business {
+
+          }
+          .company {
+
+          }
+        }
+        .user_info:after,
+        .user_info:before {
+          content: "—";
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+    .control {
+      .arrow {
+        width: 30px;
+        border-radius: 0;
+        height: 30px;
+        color: #ffffff;
+        border:1px solid #ffffff;
+        padding: 0;
+        margin: auto;
+        font-size: 16px;
+        line-height: 30px;
+        margin-right: 20px;
+      }
+      .arrow:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
+  }
+}
+
+
+/* Section products */
+section.products {
+  background-image: url(../assets/images/bg.png);
+  background-repeat: repeat;
+  padding-bottom: 120px;
+  .header {
+    height: 180px;
+    text-align: center;
+    h3 {
+      padding: 60px 10px 30px;
+      font-family: "Open Sans";
+      font-weight: bold;
+      font-size: 32px;
+    }
+  }
+  .container-fluid {
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    .item {
+      padding: 0;
+      text-align: center;
+      img {
+        max-width: 100%;
+        width: 100%;
+        width: 98%;
+      }
+      .content {
+        position: absolute;
+        width: 98%;
+        bottom: 0;
+        top: 0;
+        left: 1%;
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: all 1s ease-in-out;
+        .app_link {
+          margin-top: calc(50% - 25px);
+          height: 50px;
+          text-align: center;
+          width: 100%;
+          .device {
+            margin: 0 5px;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 1s ease-in-out;
+            opacity: 0.1;
+            &:first-child {
+              padding-right: 50px;
+              visibility: hidden;
+            }
+            &:last-child {
+              padding-left: 50px;
+              visibility: hidden;
+            }
+            a {
+              padding: 0;
+              border-radius: 50%;
+              margin: auto;
+              height: 50px;
+              border:1px solid #ffffff;
+              width: 50px;
+              color: #ffffff;
+              font-size: 32px;
+            }
+            a:hover {
+              border-color: #3c92ea;
+              background-color: #3c92ea;
+            }
+          }
+        }
+        .info {
+          margin-top: 30px;
+          text-align: center;
+          color: #fefefe;
+          .app_name{
+            display: inline-block;
+            .logo {
+              width: 50px;
+              display: inline-block;
+              float: left;
+            }
+            .title {
+              font-size: 40px;
+              line-height: 50px;
+              float: left;
+              padding-left: 16px;
+            }
+          }
+          .description {
+            display: block;
+            padding: 15px 20%;
+            font-size: 18px;
+            font-family: "Yu Gothic Regular";
+          }
+        }
+      }
+      &:last-child {
+        text-align: right;
+        .content {
+          left: 2%;
+        }
+      }
+      &:first-child {
+        text-align: left;
+        .content {
+          left: 0;
+        }
+      }
+      &:hover {
+        .content {
+          background-color: rgba(0, 0, 0, 0.3);
+          .app_link {
+            .device {
+              opacity: 1;
+              display: inline-block;
+              &:first-child {
+                padding-right: 0;
+                visibility: visible;
+              }
+              &:last-child {
+                padding-left: 0;
+                visibility: visible;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+section.contact,
+section.contact_sub{
+  background-color: #f4f4f4;
+  .container{
+    position: relative;
+    top: -100px;
+    .header {
+      text-align: center;
+      height: 250px;
+      background-color: #ffffff;
+      color: #252525;
+      h3{
+        margin: 0;
+        padding: 50px 0 30px;
+        font-weight: bold;
+        font-size: 32px;
+        font-family: "Open Sans";
+      }
+      a{
+        font-family: "Open Sans";
+        color: black;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom: 3px solid #252525;
+      }
+      .divider{
+        margin-top: 30px;
+      }
+    }
+    .company_info {
+      margin-top: 80px;
+      span {
+        display: block;
+        font-family: "Yu Gothic Regular";
+        line-height: 24px;
+        font-size: 14px;
+        color: #252525;
+      }
+      .gmap {
+        ng-map { 
+          height: 220px 
+        }
+        gmap {
+          height: 220px;
+          .map {
+            height: 220px;
+          }
+        }
+      }
+      .info {
+        padding: 0;
+        .name {
+          font-size: 14px;
+          font-family: "Yu Gothic Bold";
+        }
+      }
+      .email {
+        padding-top: 10px;
+        .title {
+          font-family: "Yu Gothic Bold";
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+}
+
+
+/* Supporting marketing content */
+
+
+
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .container {
+    width: 980px;
+  }
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}

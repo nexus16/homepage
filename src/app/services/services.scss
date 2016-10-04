@@ -1,0 +1,99 @@
+section.services_page {
+  .header{
+    h3 {
+      padding: 60px 10px 30px;
+      padding-bottom: 10px;
+      font-family: "Open Sans";
+      font-weight: bold;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  }
+  .content {
+    margin-top :50px;
+    p{
+      width: 80%;
+      margin: 50px auto;
+      font-weight: 500;
+      font-size: 15px;
+    }   
+  .info {
+    p {
+      line-height: 2 ;
+    }
+  }
+  .title{
+    padding: 0;
+    margin-bottom: 450px;
+    li{
+      color: silver;
+      font-size: 24px;
+      font-weight: 700;
+      display: inline-block;
+      padding: 0 5.2%;
+      position:relative; 
+      .App{
+        display: none;
+      } 
+      ul{
+        padding:0;
+        position: absolute;
+        list-style: none;
+        top: 50px;
+        left: 45px;
+        li{
+          font-weight: normal;
+          font-size: 14px;
+          line-height:1;
+          width: 100%;
+          color: #0095dd;
+          .caret {
+            color: black;
+          }
+        } 
+      }
+    }
+
+        }
+        li.active {
+           color: black;
+        }
+        
+  .box:hover{
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.12),0 1px 6px 0 rgba(0,0,0,0.12);
+  }
+}
+}
+
+section.products_sv {
+  background-color: #f4f4f4;
+  background-image: none;
+  padding-bottom :0 !important;
+  .header {
+    height: 180px;
+    text-align: center;
+    h3 {
+      padding: 60px 10px 30px;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+ .footer{  
+   text-align: center;
+   background-image: url("../assets/images/services_ft.png");
+   background-repeat:repeat;
+   p{
+          font-size: 14px;       
+          padding : 80px  0  20px  0 ;
+          color: #464646;
+
+    }
+
+    .logo {
+              padding-left: 16px;
+              padding-bottom: 230px;
+              width: 15%;
+              display: inline-block;         
+          }
+  }
+}

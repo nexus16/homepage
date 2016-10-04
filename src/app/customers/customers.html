@@ -1,0 +1,74 @@
+<section class="home">
+  <div class="banner">
+    <hbnavbar></hbnavbar>
+    <div class="contents text-center">
+      <div class="container">
+        <h1>OUR CUSTOMERS</h1>
+        <p class="sub">Who have put their trust in us</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="customers_list">
+  <div class="container" >
+    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiam tristique ut erat eget pharaget. tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="row">
+      <div class="col-md-3 col-sm-3" ng-repeat="item in customer.customers">
+          <a href="{{ item.url }}" target="_blank">
+            <img ng-src="{{ item.img1 }}">
+            <img ng-src="{{ item.img2 }}">
+          </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="customers_comment">
+  <h4 class="text-center">Let's hear what they saying about us</h4>
+  <slick dots=false infinite=true speed=300 slides-to-show=1 touch-move=false slides-to-scroll=1 
+    class="container list" next-arrow=".btn-slick-next" prev-arrow=".btn-slick-prev">
+    <div class="row item" ng-repeat="comment in customer.comments">
+      <div class="col-md-6 col-sm-6 img">
+        <img ng-src="{{ comment.img }}">
+      </div>
+      <div class="col-md-6 col-sm-6 comment">
+        <img ng-src="{{ comment.logo }}">
+        <blockquote>
+          <p class="content">{{ comment.content }}</p>
+        </blockquote>
+        <div class="user_info">
+          <span class="name">{{ comment.user.name }}</span>
+          <span class="slash">/</span>
+          <span class="business">{{ comment.user.bussiness }}</span>
+          <span class="slash">/</span>
+          <span class="company">{{ comment.user.company }}</span>
+        </div>
+      </div>
+    </div>
+  </slick>
+  <div class="container control">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+      </div>
+      <div class="col-md-6 col-sm-6 btn-control">
+        <a href="javascript:void(0)" class="btn arrow btn-slick-prev">
+          <i class="glyphicon glyphicon-chevron-left"></i>
+        </a>
+        <a href="javascript:void(0)" class="btn arrow btn-slick-next">
+          <i class="glyphicon glyphicon-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section class="contact">
+  <div class="container">
+    <div class="header">
+      <h3>Like what you see? Let's talk.</h3>
+      <a href="/contact">Contact us</a>
+    </div>
+    <company-info></company-info>
+  </div>
+</section>
+<hb-footer></hb-footer>

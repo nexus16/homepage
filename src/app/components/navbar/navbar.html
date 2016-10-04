@@ -1,0 +1,26 @@
+<div class="navbar navbar-invers menu-wrap">
+  <div class="container">
+    <div class="navbar-header text-center">
+      <a class="navbar-brand logo-right hblab-logo" href="/">
+        <img src="assets/images/logo_hblab.png">
+      </a>
+    </div>
+    <div class="btn-menu">
+      <div ng-click="vm.menu()" ng-class="{true: '', false: 'active'}[vm.closeMenu]">
+        <span class="text">Menu</span>
+        <span id="hamburger-menu" ng-class="{true: '', false: 'open'}[vm.closeMenu]">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+    </div>
+    <ul class="nav navbar-nav main-navigation navbar-right" ng-class="{true: '', false: 'active'}[vm.closeMenu]">
+      <li class="menu menu-recruit"><a href="/recruit">We're hiring</a></li>
+      <li class="menu"><a href="/customers">Customers</a></li>
+      <li class="menu"><a href="/services">Services</a></li>
+      <li class="menu"><a href="/contact">Contact</a></li>
+    </ul>
+      <!-- <button class="close-button" id="close-button">Close Menu</button> -->
+  </div>
+</div>
